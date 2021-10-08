@@ -94,7 +94,8 @@ Triggers.runTriggers = function(triggers, context, redirectFn, after) {
     }
 
     if(!inCurrentLoop) {
-      throw new Error("redirect needs to be done in sync");
+      //throw new Error("redirect needs to be done in sync");
+      console.log("DL trigger.js - redirect needs to be done in sync")
     }
 
     if(!url) {
